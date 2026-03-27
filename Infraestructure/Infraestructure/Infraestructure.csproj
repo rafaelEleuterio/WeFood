@@ -11,7 +11,6 @@
     <Folder Include="Messaging\" />
     <Folder Include="Services\" />
     <Folder Include="Repositories\" />
-    <Folder Include="Persistence\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,6 +21,8 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.17.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.17.0" />
   </ItemGroup>
 
   <ItemGroup>
