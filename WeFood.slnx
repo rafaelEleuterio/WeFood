@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/API/" />
+  <Folder Name="/src/Clients/" />
+  <Folder Name="/src/Core/">
+    <Project Path="Core/WeFood.Domain/WeFood.Domain.csproj" />
+  </Folder>
+  <Folder Name="/src/Infraestructure/">
+    <Project Path="Infraestructure/Infraestructure/Infraestructure.csproj" />
+  </Folder>
+  <Folder Name="/src/Tests/" />
+</Solution>
