@@ -1,6 +1,5 @@
-﻿using Infraestructure.Identity;
+﻿namespace Infraestructure.Auth;
 
-namespace Infraestructure.Auth;
 public class RefreshToken
 {
     public Guid Id { get; set; }

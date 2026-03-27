@@ -4,23 +4,21 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace Infraestructure.Persistence
+namespace Infraestructure.Persistence;
+
+public class WeFoodDbContext : IdentityDbContext<ApplicationUser, IdentityRole<Guid>, Guid>
 {
-    public class WeFoodDbContext : IdentityDbContext<ApplicationUser, IdentityRole<Guid>, Guid>
+    public WeFoodDbContext(DbContextOptions<WeFoodDbContext> options)
+        : base(options)
     {
-        public WeFoodDbContext(DbContextOptions<WeFoodDbContext> options)
-            : base(options)
-        {
-        }
-
-        public DbSet<RefreshToken> RefreshTokens => Set<RefreshToken>();
-
-        protected override void OnModelCreating(ModelBuilder builder)
-        {
-            base.OnModelCreating(builder);
-
-            builder.ApplyConfigurationsFromAssembly(typeof(WeFoodDbContext).Assembly);
-        }
     }
 
+    public DbSet<RefreshToken> RefreshTokens => Set<RefreshToken>();
+
+    protected override void OnModelCreating(ModelBuilder builder)
+    {
+        base.OnModelCreating(builder);
+
+        builder.ApplyConfigurationsFromAssembly(typeof(WeFoodDbContext).Assembly);
+    }
 }
