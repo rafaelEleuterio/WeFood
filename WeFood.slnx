@@ -5,8 +5,8 @@
   <Folder Name="/src/Core/">
     <Project Path="Core/WeFood.Domain/WeFood.Domain.csproj" />
   </Folder>
-  <Folder Name="/src/Infraestructure/">
-    <Project Path="Infraestructure/Infraestructure/Infraestructure.csproj" />
+  <Folder Name="/src/Infrastructure/">
+    <Project Path="Infraestructure/Infraestructure/Infrastructure.csproj" />
   </Folder>
   <Folder Name="/src/Tests/" />
 </Solution>
